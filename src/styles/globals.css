@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-neutral-700 transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-500 transition-colors duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 bg-neutral-800;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .techskills {
+    @apply px-3 py-1 bg-neutral-700 text-neutral-200 text-xs font-medium rounded-full hover:bg-secondary hover:text-white transition-colors duration-300;
+  }
+} 
+
+/* Border Glow Animation */
+@keyframes border-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 white;
+    border-color: white;
+  }
+  50% {
+    box-shadow: 0 0 20px 4px #38bdf8;
+    border-color: #38bdf8;
+  }
+}
+
+.animated-border {
+  animation: border-glow 2s infinite;
+  transition: border-color 0.5s, box-shadow 0.5s;
+} 
