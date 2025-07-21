@@ -33,8 +33,8 @@ export const projects: Project[] = [
     description: "A responsive portfolio website showcasing projects and skills with modern design and smooth animations.",
     image: "/images/Portfolio.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    link: "https://portfolio-demo.com",
-    github: "https://github.com/pola/portfolio"
+    link: "https://portfolio-ashy-two-83.vercel.app",
+    github: "https://github.com/Pola-Ramy/Portfolio"
   },
 
 ]; 
